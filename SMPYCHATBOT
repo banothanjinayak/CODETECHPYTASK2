@@ -1,0 +1,27 @@
+def chatbot():
+    # Greet the user
+    print("Hi! I'm a Simple Chatbot. How can I assist you today?")
+    
+    # Continuously interact with the user
+    while True:
+        # Get user input and convert it to lowercase for case insensitivity
+        user_input = input("You: ").lower()
+        
+        # Respond to different user inputs
+        if user_input == 'hello':
+            print("Chatbot: Hi there! How are you?")
+        elif user_input == 'how are you?':
+            print("Chatbot: I'm just a machine, so I don't have feelings, but thank you for asking!")
+        elif user_input == 'what is your name?':
+            print("Chatbot: I'm just a simple chatbot.")
+        elif user_input == 'exit':
+            # Provide farewell message and exit the loop
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        else:
+            # Respond with a default message for unrecognized inputs
+            print("Chatbot: Sorry, I didn't understand that. Can you please repeat or ask something else?")
+
+if __name__ == "__main__":
+    # Start the chatbot
+    chatbot()
